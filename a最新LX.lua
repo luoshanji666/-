@@ -32,7 +32,7 @@ end
 -- 弹窗确认（先弹窗，再加载窗口）
 local Confirmed = false
 WindUI:Popup({
-    Title = gradient("LX Script Hub", Color3.fromHex("#6A11CB"), Color3.fromHex("#2575FC")),
+    Title = gradient("LSJ Script Hub", Color3.fromHex("#6A11CB"), Color3.fromHex("#2575FC")),
     Icon = "sparkles",
     IconThemed = true,
     Content = "欢迎使用洛杉矶脚本！\n最新版本 \n制作人『洛杉矶』\n脚本中心群聊1077022323",
@@ -100,8 +100,8 @@ tween:Play()
 -- 唯一窗口创建（整合原两个窗口的所有配置，包含卡密系统）
 local Window = WindUI:CreateWindow({
     -- 保留原两个窗口的核心配置
-    Title = "牛逼脚本 | lsj hub", -- 合并标题，兼顾两者
-    Author = "公益版 |  .洛杉矶", -- 合并作者信息
+    Title = "牛逼脚本 | LSJ hub", -- 合并标题，兼顾两者
+    Author = "牛逼版 |  .洛杉矶", -- 合并作者信息
     Folder = "洛杉矶_scriptHUB", -- 合并存储文件夹
     NewElements = true,
     Size = UDim2.fromOffset(480, 360),
@@ -112,7 +112,7 @@ local Window = WindUI:CreateWindow({
     
     -- 原第一个窗口的 OpenButton 配置
     OpenButton = {
-        Title = "Open .LX hub UI",
+        Title = "Open .LSJ hub UI",
         CornerRadius = UDim.new(1, 0), -- 全圆角
         StrokeThickness = 3,
         Enabled = true,
@@ -129,8 +129,9 @@ local Window = WindUI:CreateWindow({
         ["0"] = {Color = Color3.fromHex("#0f0c29"), Transparency = 1},
         ["100"] = {Color = Color3.fromHex("#302b63"), Transparency = 0.9}
     }, {Rotation = 45}),
-    Background = "rbxassetid://109489097331162", -- 图片背景（覆盖渐变，按WindUI优先级）
-    Icon = "rbxassetid://123576958702805", -- 窗口图标
+    Background = "rbxassetid://17394288621", -- 图片背景（覆盖渐变，按WindUI优先级）
+    Icon = "rbxassetid://17629418832
+", -- 窗口图标
     User = {
         Enabled = true,
         Anonymous = false,
